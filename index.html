@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nine Ten Hotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <img class="photo" src="images/hero.jpg" alt="A calm navy bedroom with white bedding and wooden furniture" fetchpriority="high">
+  <div class="shade"></div>
+  <nav aria-label="Main">
+    <span class="mini">NINE/TEN</span>
+    <div class="links"><a href="#rooms">Rooms</a><a href="#amenities">Amenities</a><a href="#contact">Contact</a><a class="keep" href="#book">Book now</a></div>
+  </nav>
+  <div class="wrap">
+    <h1 class="tag">New Nine Ten Hotel</h1>
+    <p>Simple stays. Honest prices. Friendly service.</p>
+    
+  </div>
+</header>
+
+<main>
+  <div class="book" id="book">
+    <div class="wrap">
+      <div class="card">
+        <h2>Check availability</h2>
+        <p class="sub">Choose your dates. We’ll continue the enquiry on WhatsApp.</p>
+        <div class="fields">
+          <div><label for="in">Check-in</label><input type="date" id="in"></div>
+          <div><label for="out">Check-out</label><input type="date" id="out"></div>
+          <div><label for="guests">Guests</label>
+            <select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5+</option></select></div>
+          <div><label for="rooms">Rooms</label>
+            <select id="rooms"><option>1</option><option>2</option><option>3</option><option>4+</option></select></div>
+          <div class="wide"><label for="type">Room type</label>
+            <select id="type"><option>Any room</option><option>Standard Twin Room</option><option>Deluxe Twin Room</option></select></div>
+          <div class="wide"><label for="name">Your name</label><input type="text" id="name" placeholder="Full name" autocomplete="name"></div>
+        </div>
+        <p class="nights" id="nights" aria-live="polite"></p>
+        <button class="btn solid" id="send" type="button">Enquire on WhatsApp</button>
+        <p class="err" id="err" role="alert"></p>
+      </div>
+    </div>
+  </div>
+
+  <section id="rooms">
+    <div class="wrap">
+      <h2 class="title">Rooms</h2>
+      <p class="lead">Spacious twin-bed rooms for every budget. Message us for the best available room.</p>
+      <div class="rooms">
+        <article class="room"><div class="pic"><img src="images/room-standard-twin.jpg" alt="Twin room with white walls and wooden beds" loading="lazy"></div><div class="body"><h3>Standard Twin Room</h3><p>Two double beds, bright white walls and plenty of floor space.</p><div class="price">₹1,000 <small>per night</small></div></div></article>
+        <article class="room"><div class="pic"><img src="images/room-deluxe-twin.jpg" alt="Twin room with dark wood wall panelling" loading="lazy"></div><div class="body"><h3>Deluxe Twin Room</h3><p>Two double beds with wood-panelled walls and a bedside table.</p><div class="price">₹1,500 <small>per night</small></div></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="amenities">
+    <div class="wrap">
+      <h2 class="title">Amenities</h2>
+      <p class="lead">Everything you need for a short trip or a long stay.</p>
+      <div class="amen">
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9a15 15 0 0 1 20 0M5 12.5a10.5 10.5 0 0 1 14 0M8.5 16a5.5 5.5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg><p>Free Wi-Fi<span>In every room</span></p></div>
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9zM16 10h2a2.5 2.5 0 0 1 0 5h-2M7 3v3M11 3v3"/></svg><p>Breakfast<span>Served 7:00 to 10:30</span></p></div>
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M4.2 7l15.6 10M4.2 17L19.8 7M9.5 3.5L12 6l2.5-2.5M9.5 20.5L12 18l2.5 2.5"/></svg><p>AC rooms<span>Ask when booking</span></p></div>
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2"/><path d="M12 2.5v19M7 10l2-2.5 2 2.5M13 14l2 2.5 2-2.5"/></svg><p>Elevator<span>Easy access to all floors</span></p></div>
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="3"/><path d="M9.5 17V7H13a3 3 0 0 1 0 6H9.5"/></svg><p>Parking<span>On site</span></p></div>
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M6 18a6 6 0 0 1 12 0M12 8V6M10 6h4"/></svg><p>24-hour reception<span>Always staffed</span></p></div>
+        <div><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="2.5" width="16" height="19" rx="2"/><circle cx="12" cy="14" r="4.5"/><path d="M7.5 6h.01M10.5 6h.01"/></svg><p>Laundry<span>Same-day service</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap contact" style="padding-top:112px">
+      <div>
+        <h2 class="title">Find us</h2>
+        <dl>
+          <dt>Address</dt><dd>Nine Ten Hotel, Ward No 10, Nabin Sen Rd, near Gurudwara, Mahananda Para, Siliguri, West Bengal 734001</dd>
+          <dt>Check-in / Check-out</dt><dd>2:00 PM / 11:00 AM</dd>
+          <dt>WhatsApp</dt><dd><a href="#" id="wa-link">Message the front desk</a></dd>
+        </dl>
+      </div>
+      <div class="map"><div><strong>Mahananda Para, Siliguri</strong><br><span style="opacity:.8">Near Gurudwara, Nabin Sen Road</span><br><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Nine+Ten+Hotel+Nabin+Sen+Rd+Mahananda+Para+Siliguri+734001">Open in Google Maps</a></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="yr"></span> Nine Ten Hotel. All rights reserved.</footer>
+<a class="wa" id="wa-float" href="#" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
